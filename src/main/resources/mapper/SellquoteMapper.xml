@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.SellquoteDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Sellquote">
+        <id column="billNo" property="billNo" />
+        <result column="billDate" property="billDate" />
+        <result column="sinId" property="sinId" />
+        <result column="sinName" property="sinName" />
+        <result column="custID" property="custID" />
+        <result column="formaCust" property="formaCust" />
+        <result column="custAreaID" property="custAreaID" />
+        <result column="custAreaName" property="custAreaName" />
+        <result column="validDate" property="validDate" />
+        <result column="currID" property="currID" />
+        <result column="priceOfTax" property="priceOfTax" />
+        <result column="salasID" property="salasID" />
+        <result column="salasName" property="salasName" />
+        <result column="deparID" property="deparID" />
+        <result column="deparName" property="deparName" />
+        <result column="maker" property="maker" />
+        <result column="permitter" property="permitter" />
+        <result column="checkstateID" property="checkstateID" />
+        <result column="sumBTaxAmt" property="sumBTaxAmt" />
+        <result column="sumTax" property="sumTax" />
+        <result column="sumAmtTax" property="sumAmtTax" />
+        <result column="remark" property="remark" />
+        <result column="enables" property="enables" />
+        <result column="Safetyone" property="Safetyone" />
+        <result column="safetytow" property="safetytow" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNo, billDate, sinId, sinName, custID, formaCust, custAreaID, custAreaName, validDate, currID, priceOfTax, salasID, salasName, deparID, deparName, maker, permitter, checkstateID, sumBTaxAmt, sumTax, sumAmtTax, remark, enables, Safetyone, safetytow
+    </sql>
+
+</mapper>

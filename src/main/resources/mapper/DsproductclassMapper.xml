@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.DsproductclassDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Dsproductclass">
+        <id column="classid" property="classid" />
+        <result column="classname" property="classname" />
+        <result column="engname" property="engname" />
+        <result column="accinventoryid" property="accinventoryid" />
+        <result column="accinventoryname" property="accinventoryname" />
+        <result column="acpurchasedname" property="acpurchasedname" />
+        <result column="returnpurchasename" property="returnpurchasename" />
+        <result column="accsaleid" property="accsaleid" />
+        <result column="accsalename" property="accsalename" />
+        <result column="accsalecostid" property="accsalecostid" />
+        <result column="accsalecostname" property="accsalecostname" />
+        <result column="returnsaleid" property="returnsaleid" />
+        <result column="Returnsalename" property="Returnsalename" />
+        <result column="giftexpenseid" property="giftexpenseid" />
+        <result column="giftexpensename" property="giftexpensename" />
+        <result column="otherincomeid" property="otherincomeid" />
+        <result column="otherincomename" property="otherincomename" />
+        <result column="otherexpenseid" property="otherexpenseid" />
+        <result column="otherexpensename" property="otherexpensename" />
+        <result column="othercostid" property="othercostid" />
+        <result column="othercostname" property="othercostname" />
+        <result column="memo" property="memo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        classid, classname, engname, accinventoryid, accinventoryname, acpurchasedname, returnpurchasename, accsaleid, accsalename, accsalecostid, accsalecostname, returnsaleid, Returnsalename, giftexpenseid, giftexpensename, otherincomeid, otherincomename, otherexpenseid, otherexpensename, othercostid, othercostname, memo
+    </sql>
+
+</mapper>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.Dsdscust1Dao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Dsdscust1">
+        <id column="id" property="id" />
+        <result column="fundsattribution" property="fundsattribution" />
+        <result column="fullname" property="fullname" />
+        <result column="classid" property="classid" />
+        <result column="classname" property="classname" />
+        <result column="areaid" property="areaid" />
+        <result column="areaname" property="areaname" />
+        <result column="currencyid" property="currencyid" />
+        <result column="currencyname" property="currencyname" />
+        <result column="currencyrate" property="currencyrate" />
+        <result column="currencyshortname" property="currencyshortname" />
+        <result column="isforeign" property="isforeign" />
+        <result column="shortname" property="shortname" />
+        <result column="taxno" property="taxno" />
+        <result column="chiefname" property="chiefname" />
+        <result column="capitailzation" property="capitailzation" />
+        <result column="linkman" property="linkman" />
+        <result column="telephone1" property="telephone1" />
+        <result column="telephone2" property="telephone2" />
+        <result column="telephone3" property="telephone3" />
+        <result column="mobiletel" property="mobiletel" />
+        <result column="faxno" property="faxno" />
+        <result column="industarialclass" property="industarialclass" />
+        <result column="personid" property="personid" />
+        <result column="personname" property="personname" />
+        <result column="email" property="email" />
+        <result column="webaddress" property="webaddress" />
+        <result column="servername" property="servername" />
+        <result column="priceoftax" property="priceoftax" />
+        <result column="gatherother" property="gatherother" />
+        <result column="transnewid" property="transnewid" />
+        <result column="lastvisitdate" property="lastvisitdate" />
+        <result column="bookvisitdate" property="bookvisitdate" />
+        <result column="buildupdate" property="buildupdate" />
+        <result column="invotypeid" property="invotypeid" />
+        <result column="invotypename" property="invotypename" />
+        <result column="engfullname" property="engfullname" />
+        <result column="engshortname" property="engshortname" />
+        <result column="acccommi" property="acccommi" />
+        <result column="acccomminame" property="acccomminame" />
+        <result column="acccommipaied" property="acccommipaied" />
+        <result column="acccommipaiedname" property="acccommipaiedname" />
+        <result column="invzipcode" property="invzipcode" />
+        <result column="invaddress" property="invaddress" />
+        <result column="memo" property="memo" />
+        <result column="pricerank" property="pricerank" />
+        <result column="rateofdiscount" property="rateofdiscount" />
+        <result column="Addfield1" property="Addfield1" />
+        <result column="Addfield2" property="Addfield2" />
+        <result column="earliesttraddate" property="earliesttraddate" />
+        <result column="firsttradedate" property="firsttradedate" />
+        <result column="latelytradedate" property="latelytradedate" />
+        <result column="latelyreturndate" property="latelyreturndate" />
+        <result column="accreceivable" property="accreceivable" />
+        <result column="accreceivablename" property="accreceivablename" />
+        <result column="accadvrecv" property="accadvrecv" />
+        <result column="accadvrecvname" property="accadvrecvname" />
+        <result column="bankaccount" property="bankaccount" />
+        <result column="bankid" property="bankid" />
+        <result column="bankname" property="bankname" />
+        <result column="creditlevel" property="creditlevel" />
+        <result column="amountquota" property="amountquota" />
+        <result column="recvway" property="recvway" />
+        <result column="distdays" property="distdays" />
+        <result column="dayofclose" property="dayofclose" />
+        <result column="term" property="term" />
+        <result column="invaliddate" property="invaliddate" />
+        <result column="termarea" property="termarea" />
+        <result column="payment" property="payment" />
+        <result column="shipment" property="shipment" />
+        <result column="insurance" property="insurance" />
+        <result column="agentid" property="agentid" />
+        <result column="agentname" property="agentname" />
+        <result column="areafreightid" property="areafreightid" />
+        <result column="areafreighname" property="areafreighname" />
+        <result column="comefrom" property="comefrom" />
+        <result column="wentto" property="wentto" />
+        <result column="startadvrecv" property="startadvrecv" />
+        <result column="startreceivable" property="startreceivable" />
+        <result column="curadvrecv" property="curadvrecv" />
+        <result column="curreceivable" property="curreceivable" />
+        <result column="remainquota" property="remainquota" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, fundsattribution, fullname, classid, classname, areaid, areaname, currencyid, currencyname, currencyrate, currencyshortname, isforeign, shortname, taxno, chiefname, capitailzation, linkman, telephone1, telephone2, telephone3, mobiletel, faxno, industarialclass, personid, personname, email, webaddress, servername, priceoftax, gatherother, transnewid, lastvisitdate, bookvisitdate, buildupdate, invotypeid, invotypename, engfullname, engshortname, acccommi, acccomminame, acccommipaied, acccommipaiedname, invzipcode, invaddress, memo, pricerank, rateofdiscount, Addfield1, Addfield2, earliesttraddate, firsttradedate, latelytradedate, latelyreturndate, accreceivable, accreceivablename, accadvrecv, accadvrecvname, bankaccount, bankid, bankname, creditlevel, amountquota, recvway, distdays, dayofclose, term, invaliddate, termarea, payment, shipment, insurance, agentid, agentname, areafreightid, areafreighname, comefrom, wentto, startadvrecv, startreceivable, curadvrecv, curreceivable, remainquota
+    </sql>
+
+</mapper>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.DsproductprodidDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Dsproductprodid">
+        <id column="prodid" property="prodid" />
+        <result column="classid" property="classid" />
+        <result column="classname" property="classname" />
+        <result column="barcodeid" property="barcodeid" />
+        <result column="prodname" property="prodname" />
+        <result column="prodsizi" property="prodsizi" />
+        <result column="engname" property="engname" />
+        <result column="currid" property="currid" />
+        <result column="currname" property="currname" />
+        <result column="suggestprice" property="suggestprice" />
+        <result column="salespriceA" property="salespriceA" />
+        <result column="salespriceB" property="salespriceB" />
+        <result column="salespriceC" property="salespriceC" />
+        <result column="salespriceD" property="salespriceD" />
+        <result column="salespriceE" property="salespriceE" />
+        <result column="stdprice" property="stdprice" />
+        <result column="busitaxrate" property="busitaxrate" />
+        <result column="batchused" property="batchused" />
+        <result column="effectdateused" property="effectdateused" />
+        <result column="validdateused" property="validdateused" />
+        <result column="defvalidday" property="defvalidday" />
+        <result column="proddesc" property="proddesc" />
+        <result column="prodform" property="prodform" />
+        <result column="advancedays" property="advancedays" />
+        <result column="majorsupplier" property="majorsupplier" />
+        <result column="majorsuppliername" property="majorsuppliername" />
+        <result column="boutstockday" property="boutstockday" />
+        <result column="binstockday" property="binstockday" />
+        <result column="sluggishdays" property="sluggishdays" />
+        <result column="invaliddate" property="invaliddate" />
+        <result column="safeqty" property="safeqty" />
+        <result column="cy20" property="cy20" />
+        <result column="cy40" property="cy40" />
+        <result column="hq40" property="hq40" />
+        <result column="cy45" property="cy45" />
+        <result column="inpackamt" property="inpackamt" />
+        <result column="outpackamt" property="outpackamt" />
+        <result column="volumeunit" property="volumeunit" />
+        <result column="volume" property="volume" />
+        <result column="netweight" property="netweight" />
+        <result column="grossweigh" property="grossweigh" />
+        <result column="bstdcost" property="bstdcost" />
+        <result column="bavgcost" property="bavgcost" />
+        <result column="cavgcost" property="cavgcost" />
+        <result column="ctotalcost" property="ctotalcost" />
+        <result column="udef1" property="udef1" />
+        <result column="udef2" property="udef2" />
+        <result column="priceoftax" property="priceoftax" />
+        <result column="btotalcost" property="btotalcost" />
+        <result column="stdunitid" property="stdunitid" />
+        <result column="stdunitname" property="stdunitname" />
+        <result column="stdunitengname" property="stdunitengname" />
+        <result column="callamt" property="callamt" />
+        <result column="nweight" property="nweight" />
+        <result column="gweight" property="gweight" />
+        <result column="longdu" property="longdu" />
+        <result column="lunit" property="lunit" />
+        <result column="width" property="width" />
+        <result column="higth" property="higth" />
+        <result column="mvolume" property="mvolume" />
+        <result column="probigtype" property="probigtype" />
+        <result column="backtaxrate" property="backtaxrate" />
+        <result column="taxitemsid" property="taxitemsid" />
+        <result column="ballamt" property="ballamt" />
+        <result column="bcurrstock" property="bcurrstock" />
+        <result column="bsafeallstk" property="bsafeallstk" />
+        <result column="csafeallstk" property="csafeallstk" />
+        <result column="ccurrstock" property="ccurrstock" />
+        <result column="cstdcost" property="cstdcost" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        prodid, classid, classname, barcodeid, prodname, prodsizi, engname, currid, currname, suggestprice, salespriceA, salespriceB, salespriceC, salespriceD, salespriceE, stdprice, busitaxrate, batchused, effectdateused, validdateused, defvalidday, proddesc, prodform, advancedays, majorsupplier, majorsuppliername, boutstockday, binstockday, sluggishdays, invaliddate, safeqty, cy20, cy40, hq40, cy45, inpackamt, outpackamt, volumeunit, volume, netweight, grossweigh, bstdcost, bavgcost, cavgcost, ctotalcost, udef1, udef2, priceoftax, btotalcost, stdunitid, stdunitname, stdunitengname, callamt, nweight, gweight, longdu, lunit, width, higth, mvolume, probigtype, backtaxrate, taxitemsid, ballamt, bcurrstock, bsafeallstk, csafeallstk, ccurrstock, cstdcost
+    </sql>
+
+</mapper>

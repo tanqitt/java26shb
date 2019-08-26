@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.PurchasereturnsDetaikstableDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.PurchasereturnsDetaikstable">
+        <result column="serno" property="serno" />
+        <result column="prodid" property="prodid" />
+        <result column="prodname" property="prodname" />
+        <result column="prodsize" property="prodsize" />
+        <result column="sunitid" property="sunitid" />
+        <result column="sunit" property="sunit" />
+        <result column="squantity" property="squantity" />
+        <result column="oldprice" property="oldprice" />
+        <result column="discount" property="discount" />
+        <result column="sprice" property="sprice" />
+        <result column="amount" property="amount" />
+        <result column="taxrate" property="taxrate" />
+        <result column="taxamt" property="taxamt" />
+        <result column="amounttax" property="amounttax" />
+        <result column="batchid" property="batchid" />
+        <result column="isgift" property="isgift" />
+        <result column="hasinv" property="hasinv" />
+        <result column="notinvcount" property="notinvcount" />
+        <result column="itemremark" property="itemremark" />
+        <result column="trantype" property="trantype" />
+        <result column="fromno" property="fromno" />
+        <result column="sumnum" property="sumnum" />
+        <result column="facttotal" property="facttotal" />
+        <result column="tax" property="tax" />
+        <result column="amounttaxtotal" property="amounttaxtotal" />
+        <result column="dueto" property="dueto" />
+        <result column="duetoname" property="duetoname" />
+        <result column="gatherstyle" property="gatherstyle" />
+        <result column="gatherdelay" property="gatherdelay" />
+        <result column="accmonth" property="accmonth" />
+        <result column="prepayday" property="prepayday" />
+        <result column="udef1" property="udef1" />
+        <result column="udef2" property="udef2" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        serno, prodid, prodname, prodsize, sunitid, sunit, squantity, oldprice, discount, sprice, amount, taxrate, taxamt, amounttax, batchid, isgift, hasinv, notinvcount, itemremark, trantype, fromno, sumnum, facttotal, tax, amounttaxtotal, dueto, duetoname, gatherstyle, gatherdelay, accmonth, prepayday, udef1, udef2, remark
+    </sql>
+
+</mapper>

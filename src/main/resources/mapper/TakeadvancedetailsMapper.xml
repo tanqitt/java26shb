@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.TakeadvancedetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Takeadvancedetails">
+        <id column="payid" property="payid" />
+        <result column="takid" property="takid" />
+        <result column="advid" property="advid" />
+        <result column="advdetid" property="advdetid" />
+        <result column="takadvmoney" property="takadvmoney" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        payid, takid, advid, advdetid, takadvmoney, safetyone, safetytwo
+    </sql>
+
+</mapper>

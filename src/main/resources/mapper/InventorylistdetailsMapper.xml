@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InventorylistdetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Inventorylistdetails">
+        <id column="billNo" property="billNo" />
+        <result column="moveNumber" property="moveNumber" />
+        <result column="columnNo" property="columnNo" />
+        <result column="stockNumber" property="stockNumber" />
+        <result column="stockName" property="stockName" />
+        <result column="specifications" property="specifications" />
+        <result column="unit" property="unit" />
+        <result column="physical" property="physical" />
+        <result column="inventory" property="inventory" />
+        <result column="numberOfProfit" property="numberOfProfit" />
+        <result column="unitPrice" property="unitPrice" />
+        <result column="quantity" property="quantity" />
+        <result column="entryNote" property="entryNote" />
+        <result column="mespreservingOne" property="mespreservingOne" />
+        <result column="mespreservingTwo" property="mespreservingTwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNo, moveNumber, columnNo, stockNumber, stockName, specifications, unit, physical, inventory, numberOfProfit, unitPrice, quantity, entryNote, mespreservingOne, mespreservingTwo
+    </sql>
+
+</mapper>

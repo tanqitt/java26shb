@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ComfundmainDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Comfundmain">
+        <id column="Flag" property="Flag" />
+        <result column="FundBillID" property="FundBillID" />
+        <result column="FundBillDate" property="FundBillDate" />
+        <result column="CustomerID" property="CustomerID" />
+        <result column="VoucherNo" property="VoucherNo" />
+        <result column="VoucherAbs" property="VoucherAbs" />
+        <result column="Cash" property="Cash" />
+        <result column="BillMoney" property="BillMoney" />
+        <result column="SelfDefine1" property="SelfDefine1" />
+        <result column="SelfDefine2" property="SelfDefine2" />
+        <result column="Memo" property="Memo" />
+        <result column="SumOffset" property="SumOffset" />
+        <result column="Visa" property="Visa" />
+        <result column="CurrID" property="CurrID" />
+        <result column="ExchRate" property="ExchRate" />
+        <result column="Maker" property="Maker" />
+        <result column="Permitter" property="Permitter" />
+        <result column="OrigAddPrepay" property="OrigAddPrepay" />
+        <result column="OrigPrepayUsed" property="OrigPrepayUsed" />
+        <result column="CashStyle" property="CashStyle" />
+        <result column="VisaStyle" property="VisaStyle" />
+        <result column="OtherPay" property="OtherPay" />
+        <result column="OtherPayStyle" property="OtherPayStyle" />
+        <result column="IsAllCurrID" property="IsAllCurrID" />
+        <result column="PermitterID" property="PermitterID" />
+        <result column="MakerID" property="MakerID" />
+        <result column="AccBillList" property="AccBillList" />
+        <result column="HasCheck" property="HasCheck" />
+        <result column="OffSetStyle" property="OffSetStyle" />
+        <result column="TotalError" property="TotalError" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Flag, FundBillID, FundBillDate, CustomerID, VoucherNo, VoucherAbs, Cash, BillMoney, SelfDefine1, SelfDefine2, Memo, SumOffset, Visa, CurrID, ExchRate, Maker, Permitter, OrigAddPrepay, OrigPrepayUsed, CashStyle, VisaStyle, OtherPay, OtherPayStyle, IsAllCurrID, PermitterID, MakerID, AccBillList, HasCheck, OffSetStyle, TotalError
+    </sql>
+
+</mapper>

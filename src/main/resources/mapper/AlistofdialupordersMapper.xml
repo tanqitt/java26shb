@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.AlistofdialupordersDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Alistofdialuporders">
+        <id column="moveNo" property="moveNo" />
+        <result column="moveNumber" property="moveNumber" />
+        <result column="columnNo" property="columnNo" />
+        <result column="stockName" property="stockName" />
+        <result column="stockNumber" property="stockNumber" />
+        <result column="specifications" property="specifications" />
+        <result column="unit" property="unit" />
+        <result column="current" property="current" />
+        <result column="quantity" property="quantity" />
+        <result column="entryNote" property="entryNote" />
+        <result column="effectiveDate" property="effectiveDate" />
+        <result column="mespreservingOne" property="mespreservingOne" />
+        <result column="mespreservingTwo" property="mespreservingTwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        moveNo, moveNumber, columnNo, stockName, stockNumber, specifications, unit, current, quantity, entryNote, effectiveDate, mespreservingOne, mespreservingTwo
+    </sql>
+
+</mapper>

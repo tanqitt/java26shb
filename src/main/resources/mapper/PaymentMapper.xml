@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.PaymentDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Payment">
+        <id column="payid" property="payid" />
+        <result column="paydate" property="paydate" />
+        <result column="purveyid" property="purveyid" />
+        <result column="purveyname" property="purveyname" />
+        <result column="paystrikeone" property="paystrikeone" />
+        <result column="paystriketwo" property="paystriketwo" />
+        <result column="paystrikethree" property="paystrikethree" />
+        <result column="paymoneyone" property="paymoneyone" />
+        <result column="paymoneytwo" property="paymoneytwo" />
+        <result column="paymoneythree" property="paymoneythree" />
+        <result column="paymakeing" property="paymakeing" />
+        <result column="paydept" property="paydept" />
+        <result column="stodeptid" property="stodeptid" />
+        <result column="paycheckman" property="paycheckman" />
+        <result column="payremark" property="payremark" />
+        <result column="isaditing" property="isaditing" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        payid, paydate, purveyid, purveyname, paystrikeone, paystriketwo, paystrikethree, paymoneyone, paymoneytwo, paymoneythree, paymakeing, paydept, stodeptid, paycheckman, payremark, isaditing, safetyone, safetytwo
+    </sql>
+
+</mapper>

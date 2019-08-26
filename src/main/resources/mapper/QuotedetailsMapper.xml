@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.QuotedetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Quotedetails">
+        <id column="billNo" property="billNo" />
+        <result column="serNo" property="serNo" />
+        <result column="prodID" property="prodID" />
+        <result column="prodName" property="prodName" />
+        <result column="prodSize" property="prodSize" />
+        <result column="stuUnitName" property="stuUnitName" />
+        <result column="amount" property="amount" />
+        <result column="oldPrice" property="oldPrice" />
+        <result column="dicount" property="dicount" />
+        <result column="sPrice" property="sPrice" />
+        <result column="amcount" property="amcount" />
+        <result column="taxRate" property="taxRate" />
+        <result column="taxAmt" property="taxAmt" />
+        <result column="vFTotal" property="vFTotal" />
+        <result column="IsGift" property="IsGift" />
+        <result column="factCost" property="factCost" />
+        <result column="BStdCust" property="BStdCust" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNo, serNo, prodID, prodName, prodSize, stuUnitName, amount, oldPrice, dicount, sPrice, amcount, taxRate, taxAmt, vFTotal, IsGift, factCost, BStdCust, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

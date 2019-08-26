@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockorderDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockorder">
+        <id column="stoid" property="stoid" />
+        <result column="stodate" property="stodate" />
+        <result column="stopeoid" property="stopeoid" />
+        <result column="stopeoadress" property="stopeoadress" />
+        <result column="stoistax" property="stoistax" />
+        <result column="stostate" property="stostate" />
+        <result column="stoadress" property="stoadress" />
+        <result column="stopersonid" property="stopersonid" />
+        <result column="stodeptid" property="stodeptid" />
+        <result column="stoempname" property="stoempname" />
+        <result column="stoempcheck" property="stoempcheck" />
+        <result column="stomark" property="stomark" />
+        <result column="checkstate" property="checkstate" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stoid, stodate, stopeoid, stopeoadress, stoistax, stostate, stoadress, stopersonid, stodeptid, stoempname, stoempcheck, stomark, checkstate, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.ComfundsubDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Comfundsub">
+        <id column="Flag" property="Flag" />
+        <result column="FundBillNo" property="FundBillNo" />
+        <result column="RowNo" property="RowNo" />
+        <result column="SerNo" property="SerNo" />
+        <result column="SysID" property="SysID" />
+        <result column="OriginFlag" property="OriginFlag" />
+        <result column="OriginBillNo" property="OriginBillNo" />
+        <result column="PerfCount" property="PerfCount" />
+        <result column="OffSet" property="OffSet" />
+        <result column="Discount" property="Discount" />
+        <result column="LocalOffSet" property="LocalOffSet" />
+        <result column="LocalDiscount" property="LocalDiscount" />
+        <result column="AccFlag" property="AccFlag" />
+        <result column="CurrID" property="CurrID" />
+        <result column="Total" property="Total" />
+        <result column="Commission" property="Commission" />
+        <result column="OffSetMoney" property="OffSetMoney" />
+        <result column="ExchRate" property="ExchRate" />
+        <result column="LOffsetSurplus" property="LOffsetSurplus" />
+        <result column="DeptID" property="DeptID" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Flag, FundBillNo, RowNo, SerNo, SysID, OriginFlag, OriginBillNo, PerfCount, OffSet, Discount, LocalOffSet, LocalDiscount, AccFlag, CurrID, Total, Commission, OffSetMoney, ExchRate, LOffsetSurplus, DeptID
+    </sql>
+
+</mapper>

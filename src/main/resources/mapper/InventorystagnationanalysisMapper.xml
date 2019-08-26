@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InventorystagnationanalysisDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Inventorystagnationanalysis">
+        <id column="stockNumber" property="stockNumber" />
+        <result column="stockName" property="stockName" />
+        <result column="specifications" property="specifications" />
+        <result column="unit" property="unit" />
+        <result column="stockNu" property="stockNu" />
+        <result column="stockDate" property="stockDate" />
+        <result column="CurrentIncome" property="CurrentIncome" />
+        <result column="totalCost" property="totalCost" />
+        <result column="stockDay" property="stockDay" />
+        <result column="mespreservingOne" property="mespreservingOne" />
+        <result column="mespreservingTwo" property="mespreservingTwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stockNumber, stockName, specifications, unit, stockNu, stockDate, CurrentIncome, totalCost, stockDay, mespreservingOne, mespreservingTwo
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.OtheroutdetailDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Otheroutdetail">
+        <id column="billNO" property="billNO" />
+        <result column="SerNo" property="SerNo" />
+        <result column="ProdID" property="ProdID" />
+        <result column="ProdName" property="ProdName" />
+        <result column="ProdSize" property="ProdSize" />
+        <result column="StuUnitName" property="StuUnitName" />
+        <result column="quantity" property="quantity" />
+        <result column="itemRemark" property="itemRemark" />
+        <result column="clitrash" property="clitrash" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billNO, SerNo, ProdID, ProdName, ProdSize, StuUnitName, quantity, itemRemark, clitrash, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

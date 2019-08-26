@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StorageDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Storage">
+        <id column="stoid" property="stoid" />
+        <result column="stoname" property="stoname" />
+        <result column="stosimplename" property="stosimplename" />
+        <result column="stoconnectper" property="stoconnectper" />
+        <result column="stoempid" property="stoempid" />
+        <result column="stophone" property="stophone" />
+        <result column="stoaddress" property="stoaddress" />
+        <result column="storemark" property="storemark" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+        <result column="enables" property="enables" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stoid, stoname, stosimplename, stoconnectper, stoempid, stophone, stoaddress, storemark, safetyone, safetytwo, enables
+    </sql>
+
+</mapper>

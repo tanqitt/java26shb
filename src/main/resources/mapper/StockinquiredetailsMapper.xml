@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockinquiredetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockinquiredetails">
+        <id column="id" property="id" />
+        <result column="stoid" property="stoid" />
+        <result column="sdarows" property="sdarows" />
+        <result column="sdamaterielid" property="sdamaterielid" />
+        <result column="sdamateridlname" property="sdamateridlname" />
+        <result column="sdamodel" property="sdamodel" />
+        <result column="sdaunit" property="sdaunit" />
+        <result column="sdanum" property="sdanum" />
+        <result column="Sdaagioes" property="Sdaagioes" />
+        <result column="sdaagiocess" property="sdaagiocess" />
+        <result column="sdaprice" property="sdaprice" />
+        <result column="sdamoney" property="sdamoney" />
+        <result column="sdacess" property="sdacess" />
+        <result column="sdataxmoney" property="sdataxmoney" />
+        <result column="sdataxmoneys" property="sdataxmoneys" />
+        <result column="sdaislargess" property="sdaislargess" />
+        <result column="sdaoriginid" property="sdaoriginid" />
+        <result column="sdaorigintype" property="sdaorigintype" />
+        <result column="sdaremark" property="sdaremark" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, stoid, sdarows, sdamaterielid, sdamateridlname, sdamodel, sdaunit, sdanum, Sdaagioes, sdaagiocess, sdaprice, sdamoney, sdacess, sdataxmoney, sdataxmoneys, sdaislargess, sdaoriginid, sdaorigintype, sdaremark, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

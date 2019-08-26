@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockinquireDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockinquire">
+        <id column="stoid" property="stoid" />
+        <result column="stopid" property="stopid" />
+        <result column="stopaddress" property="stopaddress" />
+        <result column="sotdate" property="sotdate" />
+        <result column="stoavdate" property="stoavdate" />
+        <result column="stoistax" property="stoistax" />
+        <result column="stodaddress" property="stodaddress" />
+        <result column="stomakeperson" property="stomakeperson" />
+        <result column="stoauditingperson" property="stoauditingperson" />
+        <result column="stopersonid" property="stopersonid" />
+        <result column="stodeptid" property="stodeptid" />
+        <result column="stoauditing" property="stoauditing" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stoid, stopid, stopaddress, sotdate, stoavdate, stoistax, stodaddress, stomakeperson, stoauditingperson, stopersonid, stodeptid, stoauditing, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

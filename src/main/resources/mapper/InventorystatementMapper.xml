@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InventorystatementDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Inventorystatement">
+        <id column="stockNumber" property="stockNumber" />
+        <result column="stockName" property="stockName" />
+        <result column="specifications" property="specifications" />
+        <result column="categoryName" property="categoryName" />
+        <result column="unit" property="unit" />
+        <result column="theBalance" property="theBalance" />
+        <result column="averageCost" property="averageCost" />
+        <result column="totalCost" property="totalCost" />
+        <result column="currentIncome" property="currentIncome" />
+        <result column="totalCostOfCurrent" property="totalCostOfCurrent" />
+        <result column="quantityIssued" property="quantityIssued" />
+        <result column="totalCostOfIssue" property="totalCostOfIssue" />
+        <result column="endingBalance" property="endingBalance" />
+        <result column="endingBalanceSum" property="endingBalanceSum" />
+        <result column="totalClosingCost" property="totalClosingCost" />
+        <result column="mespreservingOne" property="mespreservingOne" />
+        <result column="mespreservingTwo" property="mespreservingTwo" />
+        <result column="theWarehouseNumber" property="theWarehouseNumber" />
+        <result column="theWarehouseName" property="theWarehouseName" />
+        <result column="singleDont" property="singleDont" />
+        <result column="oddNumbers" property="oddNumbers" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stockNumber, stockName, specifications, categoryName, unit, theBalance, averageCost, totalCost, currentIncome, totalCostOfCurrent, quantityIssued, totalCostOfIssue, endingBalance, endingBalanceSum, totalClosingCost, mespreservingOne, mespreservingTwo, theWarehouseNumber, theWarehouseName, singleDont, oddNumbers
+    </sql>
+
+</mapper>

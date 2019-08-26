@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.CostsharingResultDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.CostsharingResult">
+        <result column="serno" property="serno" />
+        <result column="billno" property="billno" />
+        <result column="prodid" property="prodid" />
+        <result column="prodname" property="prodname" />
+        <result column="prodsize" property="prodsize" />
+        <result column="amount" property="amount" />
+        <result column="sunitid" property="sunitid" />
+        <result column="sunit" property="sunit" />
+        <result column="squantity" property="squantity" />
+        <result column="weight" property="weight" />
+        <result column="volume" property="volume" />
+        <result column="mlamount" property="mlamount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        serno, billno, prodid, prodname, prodsize, amount, sunitid, sunit, squantity, weight, volume, mlamount
+    </sql>
+
+</mapper>

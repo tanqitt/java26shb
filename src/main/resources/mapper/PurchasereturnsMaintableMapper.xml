@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.PurchasereturnsMaintableDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.PurchasereturnsMaintable">
+        <result column="purchasereturnsid" property="purchasereturnsid" />
+        <result column="custid" property="custid" />
+        <result column="custshorname" property="custshorname" />
+        <result column="custaddress" property="custaddress" />
+        <result column="billdate" property="billdate" />
+        <result column="billno" property="billno" />
+        <result column="isdaduct" property="isdaduct" />
+        <result column="wareid" property="wareid" />
+        <result column="warename" property="warename" />
+        <result column="priceoftax" property="priceoftax" />
+        <result column="currid" property="currid" />
+        <result column="currencyname" property="currencyname" />
+        <result column="exchrate" property="exchrate" />
+        <result column="hasforeigntrade" property="hasforeigntrade" />
+        <result column="salesid" property="salesid" />
+        <result column="salesname" property="salesname" />
+        <result column="deparid" property="deparid" />
+        <result column="deparname" property="deparname" />
+        <result column="projectid" property="projectid" />
+        <result column="projectname" property="projectname" />
+        <result column="maker" property="maker" />
+        <result column="permitter" property="permitter" />
+        <result column="estate" property="estate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        purchasereturnsid, custid, custshorname, custaddress, billdate, billno, isdaduct, wareid, warename, priceoftax, currid, currencyname, exchrate, hasforeigntrade, salesid, salesname, deparid, deparname, projectid, projectname, maker, permitter, estate
+    </sql>
+
+</mapper>

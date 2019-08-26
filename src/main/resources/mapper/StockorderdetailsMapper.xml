@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockorderdetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockorderdetails">
+        <id column="id" property="id" />
+        <result column="sodid" property="sodid" />
+        <result column="sodlineid" property="sodlineid" />
+        <result column="sodmaterielid" property="sodmaterielid" />
+        <result column="sodmatid" property="sodmatid" />
+        <result column="sodspec" property="sodspec" />
+        <result column="sodamount" property="sodamount" />
+        <result column="sodpreprice" property="sodpreprice" />
+        <result column="sodagio" property="sodagio" />
+        <result column="sodprice" property="sodprice" />
+        <result column="sodsum" property="sodsum" />
+        <result column="sodcess" property="sodcess" />
+        <result column="sodsumcess" property="sodsumcess" />
+        <result column="sodsumprice" property="sodsumprice" />
+        <result column="sodpreincomestorage" property="sodpreincomestorage" />
+        <result column="sodpresent" property="sodpresent" />
+        <result column="sodorigintype" property="sodorigintype" />
+        <result column="sodorigin" property="sodorigin" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, sodid, sodlineid, sodmaterielid, sodmatid, sodspec, sodamount, sodpreprice, sodagio, sodprice, sodsum, sodcess, sodsumcess, sodsumprice, sodpreincomestorage, sodpresent, sodorigintype, sodorigin, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

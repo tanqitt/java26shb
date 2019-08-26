@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.SellissueorderDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Sellissueorder">
+        <id column="billId" property="billId" />
+        <result column="billDate" property="billDate" />
+        <result column="sinId" property="sinId" />
+        <result column="sinname" property="sinname" />
+        <result column="cliid" property="cliid" />
+        <result column="clishortname" property="clishortname" />
+        <result column="cliplaceid" property="cliplaceid" />
+        <result column="cliplace" property="cliplace" />
+        <result column="effectdate" property="effectdate" />
+        <result column="currencyType" property="currencyType" />
+        <result column="priceWhetherTax" property="priceWhetherTax" />
+        <result column="stoid" property="stoid" />
+        <result column="stoname" property="stoname" />
+        <result column="empid" property="empid" />
+        <result column="empName" property="empName" />
+        <result column="depid" property="depid" />
+        <result column="depName" property="depName" />
+        <result column="makeEmpName" property="makeEmpName" />
+        <result column="auditingEmpName" property="auditingEmpName" />
+        <result column="checkstate" property="checkstate" />
+        <result column="remark" property="remark" />
+        <result column="totalMoney" property="totalMoney" />
+        <result column="totalTax" property="totalTax" />
+        <result column="totalTaxMoney" property="totalTaxMoney" />
+        <result column="enables" property="enables" />
+        <result column="text1" property="text1" />
+        <result column="text2" property="text2" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        billId, billDate, sinId, sinname, cliid, clishortname, cliplaceid, cliplace, effectdate, currencyType, priceWhetherTax, stoid, stoname, empid, empName, depid, depName, makeEmpName, auditingEmpName, checkstate, remark, totalMoney, totalTax, totalTaxMoney, enables, text1, text2
+    </sql>
+
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.StockapplydetailsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Stockapplydetails">
+        <id column="id" property="id" />
+        <result column="apdrows" property="apdrows" />
+        <result column="appid" property="appid" />
+        <result column="apdmateridlid" property="apdmateridlid" />
+        <result column="apdmateridlname" property="apdmateridlname" />
+        <result column="apdmodel" property="apdmodel" />
+        <result column="apdunit" property="apdunit" />
+        <result column="apdnum" property="apdnum" />
+        <result column="apdstandardprice" property="apdstandardprice" />
+        <result column="apdstandardmoney" property="apdstandardmoney" />
+        <result column="apdprice" property="apdprice" />
+        <result column="apdintomoney" property="apdintomoney" />
+        <result column="apddemanddate" property="apddemanddate" />
+        <result column="apdstockdate" property="apdstockdate" />
+        <result column="apdnotnum" property="apdnotnum" />
+        <result column="apdoriginid" property="apdoriginid" />
+        <result column="apdorigintype" property="apdorigintype" />
+        <result column="apdremark" property="apdremark" />
+        <result column="enables" property="enables" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, apdrows, appid, apdmateridlid, apdmateridlname, apdmodel, apdunit, apdnum, apdstandardprice, apdstandardmoney, apdprice, apdintomoney, apddemanddate, apdstockdate, apdnotnum, apdoriginid, apdorigintype, apdremark, enables, safetyone, safetytwo
+    </sql>
+
+</mapper>

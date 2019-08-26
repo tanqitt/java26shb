@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.PurchaseinvoiceDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Purchaseinvoice">
+        <id column="Sysid" property="Sysid" />
+        <result column="Fundbillno" property="Fundbillno" />
+        <result column="Billdate" property="Billdate" />
+        <result column="Custid" property="Custid" />
+        <result column="Fullname" property="Fullname" />
+        <result column="Custname" property="Custname" />
+        <result column="Dueto" property="Dueto" />
+        <result column="Fundsattribname" property="Fundsattribname" />
+        <result column="Accmonth" property="Accmonth" />
+        <result column="invoiceno" property="invoiceno" />
+        <result column="currid" property="currid" />
+        <result column="Currencyname" property="Currencyname" />
+        <result column="Exchrate" property="Exchrate" />
+        <result column="Total" property="Total" />
+        <result column="tax" property="tax" />
+        <result column="Offset" property="Offset" />
+        <result column="Discount" property="Discount" />
+        <result column="Prepayday" property="Prepayday" />
+        <result column="Deptid" property="Deptid" />
+        <result column="deptname" property="deptname" />
+        <result column="Status" property="Status" />
+        <result column="Salesman" property="Salesman" />
+        <result column="PersonName" property="PersonName" />
+        <result column="CashPayStyle" property="CashPayStyle" />
+        <result column="Cashpay" property="Cashpay" />
+        <result column="VisaOayStyle" property="VisaOayStyle" />
+        <result column="Visapay" property="Visapay" />
+        <result column="OtherPayStyle" property="OtherPayStyle" />
+        <result column="Otherpay" property="Otherpay" />
+        <result column="isaditing" property="isaditing" />
+        <result column="Priceoftax" property="Priceoftax" />
+        <result column="Voucherno" property="Voucherno" />
+        <result column="Cvoucherno" property="Cvoucherno" />
+        <result column="Makerid" property="Makerid" />
+        <result column="Maker" property="Maker" />
+        <result column="Permitterid" property="Permitterid" />
+        <result column="Permitter" property="Permitter" />
+        <result column="Udefone" property="Udefone" />
+        <result column="Udeftwo" property="Udeftwo" />
+        <result column="Remark" property="Remark" />
+        <result column="Billtype" property="Billtype" />
+        <result column="Affirmstate" property="Affirmstate" />
+        <result column="Payterm" property="Payterm" />
+        <result column="Delaydays" property="Delaydays" />
+        <result column="Invotypeid" property="Invotypeid" />
+        <result column="Inbotypename" property="Inbotypename" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Sysid, Fundbillno, Billdate, Custid, Fullname, Custname, Dueto, Fundsattribname, Accmonth, invoiceno, currid, Currencyname, Exchrate, Total, tax, Offset, Discount, Prepayday, Deptid, deptname, Status, Salesman, PersonName, CashPayStyle, Cashpay, VisaOayStyle, Visapay, OtherPayStyle, Otherpay, isaditing, Priceoftax, Voucherno, Cvoucherno, Makerid, Maker, Permitterid, Permitter, Udefone, Udeftwo, Remark, Billtype, Affirmstate, Payterm, Delaydays, Invotypeid, Inbotypename, safetyone, safetytwo
+    </sql>
+
+</mapper>

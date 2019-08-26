@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.Dsdatasat2Dao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Dsdatasat2">
+        <id column="addrid" property="addrid" />
+        <result column="address" property="address" />
+        <result column="zipcode" property="zipcode" />
+        <result column="linkman" property="linkman" />
+        <result column="telephone" property="telephone" />
+        <result column="faxno" property="faxno" />
+        <result column="walkaddr" property="walkaddr" />
+        <result column="memo" property="memo" />
+        <result column="linkmanprof" property="linkmanprof" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        addrid, address, zipcode, linkman, telephone, faxno, walkaddr, memo, linkmanprof
+    </sql>
+
+</mapper>

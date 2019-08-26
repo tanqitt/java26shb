@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.InputandoutputlistDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Inputandoutputlist">
+        <id column="singleSource" property="singleSource" />
+        <result column="billNo" property="billNo" />
+        <result column="lineNumber" property="lineNumber" />
+        <result column="warehouseId" property="warehouseId" />
+        <result column="stockNumber" property="stockNumber" />
+        <result column="adjustDate" property="adjustDate" />
+        <result column="quantuty" property="quantuty" />
+        <result column="addAndSubtract" property="addAndSubtract" />
+        <result column="unitPrice" property="unitPrice" />
+        <result column="aggregateAmount" property="aggregateAmount" />
+        <result column="mespreservingOne" property="mespreservingOne" />
+        <result column="mespreservingTwo" property="mespreservingTwo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        singleSource, billNo, lineNumber, warehouseId, stockNumber, adjustDate, quantuty, addAndSubtract, unitPrice, aggregateAmount, mespreservingOne, mespreservingTwo
+    </sql>
+
+</mapper>

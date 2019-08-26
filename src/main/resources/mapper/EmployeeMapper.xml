@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.accp.dao.EmployeeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.accp.entity.Employee">
+        <result column="empid" property="empid" />
+        <result column="empname" property="empname" />
+        <result column="empename" property="empename" />
+        <result column="depid" property="depid" />
+        <result column="empsex" property="empsex" />
+        <result column="empcard" property="empcard" />
+        <result column="empstate" property="empstate" />
+        <result column="empduty" property="empduty" />
+        <result column="empphoneone" property="empphoneone" />
+        <result column="empphonetwo" property="empphonetwo" />
+        <result column="empphonethree" property="empphonethree" />
+        <result column="empbankaccounts" property="empbankaccounts" />
+        <result column="empbirthday" property="empbirthday" />
+        <result column="empjob" property="empjob" />
+        <result column="Empemail" property="Empemail" />
+        <result column="empweb" property="empweb" />
+        <result column="empfaxes" property="empfaxes" />
+        <result column="empopenbank" property="empopenbank" />
+        <result column="emptop" property="emptop" />
+        <result column="empdegree" property="empdegree" />
+        <result column="empgotime" property="empgotime" />
+        <result column="empgraduatetime" property="empgraduatetime" />
+        <result column="emppactstarttime" property="emppactstarttime" />
+        <result column="emppactendtime" property="emppactendtime" />
+        <result column="empnowmailid" property="empnowmailid" />
+        <result column="empfamilyphone" property="empfamilyphone" />
+        <result column="empfamilyplace" property="empfamilyplace" />
+        <result column="empnowphone" property="empnowphone" />
+        <result column="empnowplace" property="empnowplace" />
+        <result column="empexigenceman" property="empexigenceman" />
+        <result column="empfamilymailid" property="empfamilymailid" />
+        <result column="empremark" property="empremark" />
+        <result column="emptrash" property="emptrash" />
+        <result column="safetyone" property="safetyone" />
+        <result column="safetytwo" property="safetytwo" />
+        <result column="enables" property="enables" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        empid, empname, empename, depid, empsex, empcard, empstate, empduty, empphoneone, empphonetwo, empphonethree, empbankaccounts, empbirthday, empjob, Empemail, empweb, empfaxes, empopenbank, emptop, empdegree, empgotime, empgraduatetime, emppactstarttime, emppactendtime, empnowmailid, empfamilyphone, empfamilyplace, empnowphone, empnowplace, empexigenceman, empfamilymailid, empremark, emptrash, safetyone, safetytwo, enables
+    </sql>
+
+</mapper>
