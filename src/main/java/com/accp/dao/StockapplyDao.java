@@ -1,5 +1,7 @@
 package com.accp.dao;
 
+import java.util.List;
+
 import com.accp.entity.Stockapply;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface StockapplyDao extends BaseMapper<Stockapply> {
 
+	public List<Stockapply> queryAll(String name);
+	
 }
