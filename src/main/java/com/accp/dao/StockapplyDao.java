@@ -5,6 +5,8 @@ import java.util.List;
 import com.accp.entity.Stockapply;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import io.lettuce.core.dynamic.annotation.Param;
+
 /**
  * <p>
  *  Mapper 接口
@@ -15,6 +17,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface StockapplyDao extends BaseMapper<Stockapply> {
 
-	public List<Stockapply> queryAll(String name);
+	public List<Stockapply> queryAll( String appid);
 	
 }

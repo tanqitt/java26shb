@@ -1,5 +1,7 @@
 package com.accp.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,10 +27,11 @@ public class StockapplyServiceImpl extends ServiceImpl<StockapplyDao, Stockapply
 	@Autowired
 	private StockapplyDao examMapper;
 	
-	public PageInfo<Stockapply> queryAll(Integer currentPage,Integer pageSize,String name){
-		Page<Stockapply> page = PageHelper.startPage(currentPage, pageSize, true);
-		examMapper.queryAll(name);
-		return page.toPageInfo();
+	public List<Stockapply> queryAll(String name){
+		
+		List<Stockapply> list = examMapper.queryAll(name);
+		
+		return list;
 	}
 	
 }
