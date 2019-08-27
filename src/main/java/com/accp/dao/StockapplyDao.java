@@ -17,6 +17,7 @@ import io.lettuce.core.dynamic.annotation.Param;
  */
 public interface StockapplyDao extends BaseMapper<Stockapply> {
 
-	public List<Stockapply> queryAll( String appid);
+	
+	public int deleteid(@Param("appid") String appid);
 	
 }

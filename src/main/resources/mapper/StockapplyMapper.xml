@@ -22,9 +22,10 @@
     <sql id="Base_Column_List">
         appid, appdate, apptype, appcircs, apppersonid, appdeptid, appmaker, appauditingperson, appauditing, enables, safetyone, safetytwo
     </sql>
+   
     
-    <select id="queryAll" resultMap="BaseResultMap">
-    	select * from stockapply  
-    </select>
+    <update id="deleteid">
+    	update  stockapply set enables = 2 where appid = #{appid}
+    </update>
 
 </mapper>

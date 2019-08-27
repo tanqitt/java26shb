@@ -27,11 +27,15 @@ public class StockapplyServiceImpl extends ServiceImpl<StockapplyDao, Stockapply
 	@Autowired
 	private StockapplyDao examMapper;
 	
-	public List<Stockapply> queryAll(String name){
-		
-		List<Stockapply> list = examMapper.queryAll(name);
-		
-		return list;
+	
+	
+
+
+	@Override
+	public int deleteid(String appid) {
+		// TODO Auto-generated method stub
+		examMapper.deleteid(appid);
+		return 0;
 	}
 	
 }

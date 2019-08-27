@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IStockapplyService extends IService<Stockapply> {
 
+	public int deleteid( String appid);
 }
