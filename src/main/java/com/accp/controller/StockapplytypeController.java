@@ -1,9 +1,17 @@
 package com.accp.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import java.util.List;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.accp.entity.Stockapply;
+import com.accp.entity.Stockapplytype;
+import com.accp.service.impl.StockapplytypeServiceImpl;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 /**
  * <p>
@@ -13,9 +21,19 @@ import org.springframework.stereotype.Controller;
  * @author lhp
  * @since 2019-08-26
  */
-@Controller
+@RestController
 @RequestMapping("/stockapplytype")
 public class StockapplytypeController {
 
+	@Autowired
+	private StockapplytypeServiceImpl impl;
+	
+	@RequestMapping("/selectall")
+	@ResponseBody
+	public List<Stockapplytype> selectall(){
+		QueryWrapper<Stockapplytype> query = new QueryWrapper<Stockapplytype>();
+		query.lambda().eq(Stockapplytype::getEnable, "1");
+		return impl.list(query);
+	}
 }
 

@@ -38,9 +38,51 @@ public class Stockapplytype extends Model<Stockapplytype> {
 
     @ApiModelProperty(value = "标识是否删除")
     private Integer enable;
+    
+    
 
 
-    public static final String APTID = "aptid";
+    public String getAptid() {
+		return aptid;
+	}
+
+	public void setAptid(String aptid) {
+		this.aptid = aptid;
+	}
+
+	public String getAptname() {
+		return aptname;
+	}
+
+	public void setAptname(String aptname) {
+		this.aptname = aptname;
+	}
+
+	public String getAptename() {
+		return aptename;
+	}
+
+	public void setAptename(String aptename) {
+		this.aptename = aptename;
+	}
+
+	public String getAptremark() {
+		return aptremark;
+	}
+
+	public void setAptremark(String aptremark) {
+		this.aptremark = aptremark;
+	}
+
+	public Integer getEnable() {
+		return enable;
+	}
+
+	public void setEnable(Integer enable) {
+		this.enable = enable;
+	}
+
+	public static final String APTID = "aptid";
 
     public static final String APTNAME = "aptname";
 
