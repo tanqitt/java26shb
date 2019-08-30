@@ -34,7 +34,7 @@ public class StockapplyController {
 	@RequestMapping("/selectall")
 	@ResponseBody
 	public Page<Stockapply> queryAll(Integer currentPage,String name,Integer myts) {
-	
+		System.out.println("11");
 		//非空操作
 		if(myts==null) {
 			myts=2;
