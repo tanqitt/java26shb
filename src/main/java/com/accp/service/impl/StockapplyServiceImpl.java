@@ -1,17 +1,13 @@
 package com.accp.service.impl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accp.dao.StockapplyDao;
+import com.accp.dao.StockapplydetailsDao;
 import com.accp.entity.Stockapply;
 import com.accp.service.IStockapplyService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 
 /**
  * <p>
@@ -27,10 +23,22 @@ public class StockapplyServiceImpl extends ServiceImpl<StockapplyDao, Stockapply
 	@Autowired
 	private StockapplyDao examMapper;
 	
+	@Autowired
+	private StockapplydetailsDao examMapper1;
+	//添加主表
+	public int  addz(Stockapply apply) {
+		 
+		return examMapper.addz(apply);
+	}
 	
+	//添加从表
+	public int  addc(Stockapply apply) {
+		
+			return examMapper1.addc(apply.getApplydetails());
+	}
 	
 
-
+	//删除
 	@Override
 	public int deleteid(String appid) {
 		// TODO Auto-generated method stub

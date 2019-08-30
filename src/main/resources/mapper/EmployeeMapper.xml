@@ -46,5 +46,8 @@
     <sql id="Base_Column_List">
         empid, empname, empename, depid, empsex, empcard, empstate, empduty, empphoneone, empphonetwo, empphonethree, empbankaccounts, empbirthday, empjob, Empemail, empweb, empfaxes, empopenbank, emptop, empdegree, empgotime, empgraduatetime, emppactstarttime, emppactendtime, empnowmailid, empfamilyphone, empfamilyplace, empnowphone, empnowplace, empexigenceman, empfamilymailid, empremark, emptrash, safetyone, safetytwo, enables
     </sql>
+    
+    
+   
 
 </mapper>

@@ -44,9 +44,67 @@ public class Depttab extends Model<Depttab> {
 
     @ApiModelProperty(value = "标识是否删除")
     private Integer enables;
+    
+    
 
 
-    public static final String DEPID = "depid";
+    public String getDepid() {
+		return depid;
+	}
+
+	public void setDepid(String depid) {
+		this.depid = depid;
+	}
+
+	public String getDepname() {
+		return depname;
+	}
+
+	public void setDepname(String depname) {
+		this.depname = depname;
+	}
+
+	public String getDepremark() {
+		return depremark;
+	}
+
+	public void setDepremark(String depremark) {
+		this.depremark = depremark;
+	}
+
+	public String getDeptrash() {
+		return deptrash;
+	}
+
+	public void setDeptrash(String deptrash) {
+		this.deptrash = deptrash;
+	}
+
+	public String getSafetyone() {
+		return safetyone;
+	}
+
+	public void setSafetyone(String safetyone) {
+		this.safetyone = safetyone;
+	}
+
+	public String getSafetytwo() {
+		return safetytwo;
+	}
+
+	public void setSafetytwo(String safetytwo) {
+		this.safetytwo = safetytwo;
+	}
+
+	public Integer getEnables() {
+		return enables;
+	}
+
+	public void setEnables(Integer enables) {
+		this.enables = enables;
+	}
+
+	public static final String DEPID = "depid";
 
     public static final String DEPNAME = "depname";
 

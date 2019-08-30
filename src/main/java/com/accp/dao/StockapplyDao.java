@@ -20,4 +20,8 @@ public interface StockapplyDao extends BaseMapper<Stockapply> {
 	
 	public int deleteid(@Param("appid") String appid);
 	
+	public int addz(Stockapply apply);
+	
+	
+	
 }

@@ -2,6 +2,8 @@ package com.accp.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,7 +34,7 @@ public class StockapplyController {
 	@RequestMapping("/selectall")
 	@ResponseBody
 	public Page<Stockapply> queryAll(Integer currentPage,String name,Integer myts) {
-		System.out.println(myts);
+	
 		//非空操作
 		if(myts==null) {
 			myts=2;
@@ -58,6 +60,28 @@ public class StockapplyController {
 		int i = impl.deleteid(appid);
 		return i;
 
+	}
+	
+	//添加
+	@RequestMapping("/addstock")
+	@ResponseBody
+	public int addstock( @RequestBody Stockapply addstock) {
+		
+		try {
+			int i = impl.addz(addstock);
+			if(i>0) {
+				System.out.println(addstock.getAppid()+"addid");
+				int j = impl.addc(addstock);
+				
+				if(j>0) {
+					return j;
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
 	}
 	
 	

@@ -27,5 +27,17 @@
     <update id="deleteid">
     	update  stockapply set enables = 2 where appid = #{appid}
     </update>
+    
+    
+    
+    <!--新增请购报价单  -->
+	<insert id="addz" keyProperty="appid">
+		INSERT INTO `stockapply`(
+		  <include refid="Base_Column_List" />)
+		VALUES(#{appid}, #{appdate}, #{apptype},
+		 #{appcircs}, #{apppersonid}, #{appdeptid}, #{appmaker}, #{appauditingperson}, 
+		1, #{enables}, #{safetyone}, #{safetytwo})
+	</insert>
+	
 
 </mapper>

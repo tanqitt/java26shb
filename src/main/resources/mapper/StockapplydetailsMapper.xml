@@ -31,5 +31,18 @@
     <sql id="Base_Column_List">
         id, apdrows, appid, apdmateridlid, apdmateridlname, apdmodel, apdunit, apdnum, apdstandardprice, apdstandardmoney, apdprice, apdintomoney, apddemanddate, apdstockdate, apdnotnum, apdoriginid, apdorigintype, apdremark, enables, safetyone, safetytwo
     </sql>
+    
+    
+    <!-- 新增请购报价单明细表 -->
+	<insert id="addc" parameterType="com.accp.entity.Stockapplydetails">
+		INSERT INTO `stockapplydetails`( apdrows, appid, apdmateridlid, apdmateridlname, apdmodel, apdunit, apdnum, apdstandardprice, apdstandardmoney, apdprice, apdintomoney, apddemanddate, apdstockdate, apdnotnum, apdoriginid, apdorigintype, apdremark, enables, safetyone, safetytwo )VALUES
+		<foreach collection="list" separator="," item="s">
+			(#{s.apdrows},#{s.appid},#{s.apdmateridlid},#{s.apdmateridlname},#{s.apdmodel},#{s.apdunit},#{s.apdnum},
+			#{s.apdstandardprice},#{s.apdstandardmoney},#{s.apdprice},#{s.apdintomoney},#{s.apddemanddate},
+			#{s.apdstockdate},#{s.apdnotnum},#{s.apdoriginid},#{s.apdorigintype},#{s.apdremark}
+			,#{s.enables},#{s.safetyone},#{s.safetytwo})
+		</foreach>
+		 
+	</insert>
 
 </mapper>

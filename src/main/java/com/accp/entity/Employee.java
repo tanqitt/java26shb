@@ -134,9 +134,300 @@ public class Employee extends Model<Employee> {
 
     @ApiModelProperty(value = "标识是否删除")
     private Integer enables;
+    
+    
+    
+  
 
+	public String getEmpid() {
+		return empid;
+	}
 
-    public static final String EMPID = "empid";
+	public void setEmpid(String empid) {
+		this.empid = empid;
+	}
+
+	public String getEmpname() {
+		return empname;
+	}
+
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+
+	public String getEmpename() {
+		return empename;
+	}
+
+	public void setEmpename(String empename) {
+		this.empename = empename;
+	}
+
+	public String getDepid() {
+		return depid;
+	}
+
+	public void setDepid(String depid) {
+		this.depid = depid;
+	}
+
+	public String getEmpsex() {
+		return empsex;
+	}
+
+	public void setEmpsex(String empsex) {
+		this.empsex = empsex;
+	}
+
+	public String getEmpcard() {
+		return empcard;
+	}
+
+	public void setEmpcard(String empcard) {
+		this.empcard = empcard;
+	}
+
+	public String getEmpstate() {
+		return empstate;
+	}
+
+	public void setEmpstate(String empstate) {
+		this.empstate = empstate;
+	}
+
+	public String getEmpduty() {
+		return empduty;
+	}
+
+	public void setEmpduty(String empduty) {
+		this.empduty = empduty;
+	}
+
+	public String getEmpphoneone() {
+		return empphoneone;
+	}
+
+	public void setEmpphoneone(String empphoneone) {
+		this.empphoneone = empphoneone;
+	}
+
+	public String getEmpphonetwo() {
+		return empphonetwo;
+	}
+
+	public void setEmpphonetwo(String empphonetwo) {
+		this.empphonetwo = empphonetwo;
+	}
+
+	public String getEmpphonethree() {
+		return empphonethree;
+	}
+
+	public void setEmpphonethree(String empphonethree) {
+		this.empphonethree = empphonethree;
+	}
+
+	public String getEmpbankaccounts() {
+		return empbankaccounts;
+	}
+
+	public void setEmpbankaccounts(String empbankaccounts) {
+		this.empbankaccounts = empbankaccounts;
+	}
+
+	public LocalDate getEmpbirthday() {
+		return empbirthday;
+	}
+
+	public void setEmpbirthday(LocalDate empbirthday) {
+		this.empbirthday = empbirthday;
+	}
+
+	public String getEmpjob() {
+		return empjob;
+	}
+
+	public void setEmpjob(String empjob) {
+		this.empjob = empjob;
+	}
+
+	public String getEmpemail() {
+		return Empemail;
+	}
+
+	public void setEmpemail(String empemail) {
+		Empemail = empemail;
+	}
+
+	public String getEmpweb() {
+		return empweb;
+	}
+
+	public void setEmpweb(String empweb) {
+		this.empweb = empweb;
+	}
+
+	public String getEmpfaxes() {
+		return empfaxes;
+	}
+
+	public void setEmpfaxes(String empfaxes) {
+		this.empfaxes = empfaxes;
+	}
+
+	public String getEmpopenbank() {
+		return empopenbank;
+	}
+
+	public void setEmpopenbank(String empopenbank) {
+		this.empopenbank = empopenbank;
+	}
+
+	public String getEmptop() {
+		return emptop;
+	}
+
+	public void setEmptop(String emptop) {
+		this.emptop = emptop;
+	}
+
+	public String getEmpdegree() {
+		return empdegree;
+	}
+
+	public void setEmpdegree(String empdegree) {
+		this.empdegree = empdegree;
+	}
+
+	public String getEmpgotime() {
+		return empgotime;
+	}
+
+	public void setEmpgotime(String empgotime) {
+		this.empgotime = empgotime;
+	}
+
+	public String getEmpgraduatetime() {
+		return empgraduatetime;
+	}
+
+	public void setEmpgraduatetime(String empgraduatetime) {
+		this.empgraduatetime = empgraduatetime;
+	}
+
+	public LocalDate getEmppactstarttime() {
+		return emppactstarttime;
+	}
+
+	public void setEmppactstarttime(LocalDate emppactstarttime) {
+		this.emppactstarttime = emppactstarttime;
+	}
+
+	public LocalDate getEmppactendtime() {
+		return emppactendtime;
+	}
+
+	public void setEmppactendtime(LocalDate emppactendtime) {
+		this.emppactendtime = emppactendtime;
+	}
+
+	public String getEmpnowmailid() {
+		return empnowmailid;
+	}
+
+	public void setEmpnowmailid(String empnowmailid) {
+		this.empnowmailid = empnowmailid;
+	}
+
+	public String getEmpfamilyphone() {
+		return empfamilyphone;
+	}
+
+	public void setEmpfamilyphone(String empfamilyphone) {
+		this.empfamilyphone = empfamilyphone;
+	}
+
+	public String getEmpfamilyplace() {
+		return empfamilyplace;
+	}
+
+	public void setEmpfamilyplace(String empfamilyplace) {
+		this.empfamilyplace = empfamilyplace;
+	}
+
+	public String getEmpnowphone() {
+		return empnowphone;
+	}
+
+	public void setEmpnowphone(String empnowphone) {
+		this.empnowphone = empnowphone;
+	}
+
+	public String getEmpnowplace() {
+		return empnowplace;
+	}
+
+	public void setEmpnowplace(String empnowplace) {
+		this.empnowplace = empnowplace;
+	}
+
+	public String getEmpexigenceman() {
+		return empexigenceman;
+	}
+
+	public void setEmpexigenceman(String empexigenceman) {
+		this.empexigenceman = empexigenceman;
+	}
+
+	public String getEmpfamilymailid() {
+		return empfamilymailid;
+	}
+
+	public void setEmpfamilymailid(String empfamilymailid) {
+		this.empfamilymailid = empfamilymailid;
+	}
+
+	public String getEmpremark() {
+		return empremark;
+	}
+
+	public void setEmpremark(String empremark) {
+		this.empremark = empremark;
+	}
+
+	public String getEmptrash() {
+		return emptrash;
+	}
+
+	public void setEmptrash(String emptrash) {
+		this.emptrash = emptrash;
+	}
+
+	public String getSafetyone() {
+		return safetyone;
+	}
+
+	public void setSafetyone(String safetyone) {
+		this.safetyone = safetyone;
+	}
+
+	public String getSafetytwo() {
+		return safetytwo;
+	}
+
+	public void setSafetytwo(String safetytwo) {
+		this.safetytwo = safetytwo;
+	}
+
+	public Integer getEnables() {
+		return enables;
+	}
+
+	public void setEnables(Integer enables) {
+		this.enables = enables;
+	}
+
+	public static final String EMPID = "empid";
 
     public static final String EMPNAME = "empname";
 

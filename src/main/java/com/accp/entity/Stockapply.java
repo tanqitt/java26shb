@@ -1,8 +1,12 @@
 package com.accp.entity;
 
-import com.baomidou.mybatisplus.extension.activerecord.Model;
-import java.time.LocalDate;
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.List;
+
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -60,11 +64,23 @@ public class Stockapply extends Model<Stockapply> {
 
     @ApiModelProperty(value = "保留字段")
     private String safetytwo;
-
+    
+    @TableField(exist=false)
+    private    List<Stockapplydetails> applydetails ;
     
     
 
    
+	
+
+	public List<Stockapplydetails> getApplydetails() {
+		return applydetails;
+	}
+
+	public void setApplydetails(List<Stockapplydetails> applydetails) {
+		this.applydetails = applydetails;
+	}
+
 	public String getAppid() {
 		return appid;
 	}

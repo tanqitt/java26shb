@@ -25,8 +25,7 @@ public class Stockapplydetails extends Model<Stockapplydetails> {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "主键id")
-    private Integer id;
+   
 
     @ApiModelProperty(value = "行号")
     private Integer apdrows;
@@ -85,9 +84,173 @@ public class Stockapplydetails extends Model<Stockapplydetails> {
     private String safetyone;
 
     private String safetytwo;
+    
+    
 
 
-    public static final String ID = "id";
+   
+
+	public Integer getApdrows() {
+		return apdrows;
+	}
+
+	public void setApdrows(Integer apdrows) {
+		this.apdrows = apdrows;
+	}
+
+	public String getAppid() {
+		return appid;
+	}
+
+	public void setAppid(String appid) {
+		this.appid = appid;
+	}
+
+	public String getApdmateridlid() {
+		return apdmateridlid;
+	}
+
+	public void setApdmateridlid(String apdmateridlid) {
+		this.apdmateridlid = apdmateridlid;
+	}
+
+	public String getApdmateridlname() {
+		return apdmateridlname;
+	}
+
+	public void setApdmateridlname(String apdmateridlname) {
+		this.apdmateridlname = apdmateridlname;
+	}
+
+	public String getApdmodel() {
+		return apdmodel;
+	}
+
+	public void setApdmodel(String apdmodel) {
+		this.apdmodel = apdmodel;
+	}
+
+	public String getApdunit() {
+		return apdunit;
+	}
+
+	public void setApdunit(String apdunit) {
+		this.apdunit = apdunit;
+	}
+
+	public Integer getApdnum() {
+		return apdnum;
+	}
+
+	public void setApdnum(Integer apdnum) {
+		this.apdnum = apdnum;
+	}
+
+	public Double getApdstandardprice() {
+		return apdstandardprice;
+	}
+
+	public void setApdstandardprice(Double apdstandardprice) {
+		this.apdstandardprice = apdstandardprice;
+	}
+
+	public Double getApdstandardmoney() {
+		return apdstandardmoney;
+	}
+
+	public void setApdstandardmoney(Double apdstandardmoney) {
+		this.apdstandardmoney = apdstandardmoney;
+	}
+
+	public Double getApdprice() {
+		return apdprice;
+	}
+
+	public void setApdprice(Double apdprice) {
+		this.apdprice = apdprice;
+	}
+
+	public Double getApdintomoney() {
+		return apdintomoney;
+	}
+
+	public void setApdintomoney(Double apdintomoney) {
+		this.apdintomoney = apdintomoney;
+	}
+
+	public LocalDate getApddemanddate() {
+		return apddemanddate;
+	}
+
+	public void setApddemanddate(LocalDate apddemanddate) {
+		this.apddemanddate = apddemanddate;
+	}
+
+	public LocalDate getApdstockdate() {
+		return apdstockdate;
+	}
+
+	public void setApdstockdate(LocalDate apdstockdate) {
+		this.apdstockdate = apdstockdate;
+	}
+
+	public Integer getApdnotnum() {
+		return apdnotnum;
+	}
+
+	public void setApdnotnum(Integer apdnotnum) {
+		this.apdnotnum = apdnotnum;
+	}
+
+	public String getApdoriginid() {
+		return apdoriginid;
+	}
+
+	public void setApdoriginid(String apdoriginid) {
+		this.apdoriginid = apdoriginid;
+	}
+
+	public String getApdorigintype() {
+		return apdorigintype;
+	}
+
+	public void setApdorigintype(String apdorigintype) {
+		this.apdorigintype = apdorigintype;
+	}
+
+	public String getApdremark() {
+		return apdremark;
+	}
+
+	public void setApdremark(String apdremark) {
+		this.apdremark = apdremark;
+	}
+
+	public Integer getEnables() {
+		return enables;
+	}
+
+	public void setEnables(Integer enables) {
+		this.enables = enables;
+	}
+
+	public String getSafetyone() {
+		return safetyone;
+	}
+
+	public void setSafetyone(String safetyone) {
+		this.safetyone = safetyone;
+	}
+
+	public String getSafetytwo() {
+		return safetytwo;
+	}
+
+	public void setSafetytwo(String safetytwo) {
+		this.safetytwo = safetytwo;
+	}
+
+	public static final String ID = "id";
 
     public static final String APDROWS = "apdrows";
 
@@ -129,9 +292,5 @@ public class Stockapplydetails extends Model<Stockapplydetails> {
 
     public static final String SAFETYTWO = "safetytwo";
 
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
-    }
-
+   
 }

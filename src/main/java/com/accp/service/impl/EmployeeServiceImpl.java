@@ -1,10 +1,14 @@
 package com.accp.service.impl;
 
-import com.accp.entity.Employee;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.accp.dao.EmployeeDao;
+import com.accp.entity.Employee;
 import com.accp.service.IEmployeeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -17,4 +21,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmployeeServiceImpl extends ServiceImpl<EmployeeDao, Employee> implements IEmployeeService {
 
+	@Autowired
+	private EmployeeDao dao;
+	
+	public List<Employee> selectall(){
+		
+		return dao.selectall();
+	}
 }
