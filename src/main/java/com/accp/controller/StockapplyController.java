@@ -45,6 +45,7 @@ public class StockapplyController {
 		if(name==null) {
 			name="";
 		}
+		
 		Page<Stockapply> page = new Page<>(currentPage, myts);
 		QueryWrapper<Stockapply> query = new QueryWrapper<Stockapply>();
 		query.lambda().like(Stockapply::getAppid, name).eq(Stockapply::getEnables, "1");
