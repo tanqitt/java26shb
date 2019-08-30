@@ -27,11 +27,7 @@ import com.github.pagehelper.PageInfo;
 @RequestMapping("/stockapply")
 public class StockapplyController {  
 
-	
-	
-	
-	
-	
+
 	
 	@Autowired
 	private StockapplyServiceImpl impl;
