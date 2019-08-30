@@ -25,8 +25,9 @@ import com.github.pagehelper.PageInfo;
  */
 @RestController
 @RequestMapping("/stockapply")
-public class StockapplyController {
+public class StockapplyController {  //dd
 
+	
 	@Autowired
 	private StockapplyServiceImpl impl;
 	
