@@ -28,6 +28,8 @@ import com.github.pagehelper.PageInfo;
 public class StockapplyController {  
 //dddd
 	
+	
+	
 	@Autowired
 	private StockapplyServiceImpl impl;
 	
